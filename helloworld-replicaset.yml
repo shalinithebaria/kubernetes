@@ -7,7 +7,8 @@ metadata:
 spec:
   replicas: 5
   selector:
-    app: helloworld
+    matchLabels:
+      app: helloworld
   template:
     metadata:
       labels:
@@ -19,3 +20,4 @@ spec:
         ports:
         - name: nodejs-port
           containerPort: 3000
+
