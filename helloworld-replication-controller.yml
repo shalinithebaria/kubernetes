@@ -9,7 +9,7 @@ spec:
   template:
     metadata:
       labels:
-        apsp: helloworld
+        app: helloworld
     spec:
       containers:
       - name: k8s-demo
