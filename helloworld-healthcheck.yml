@@ -22,5 +22,5 @@ spec:
           httpGet:
             path: /
             port: nodejs-port
-          initalDelaySeconds: 15
+          initialDelaySeconds: 15
           timeoutSeconds: 30
