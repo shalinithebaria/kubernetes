@@ -12,25 +12,23 @@ spec:
     - name: mysql-port
       containerPort: 3306
     env:
-    - name: MYSQL_ROOT_PASSWORD
-      valueFrom: 
-        secretKeyRef:
-          name: helloworld-secrets
-          key: rootPassword
-    - name: MYSQL_USER
-      valueFrom: 
-        secretKeyRef:
-          name: helloworld-secrets
-          key: username
-    - name: MYSQL_PASSWORD
-      valueFrom: 
-        secretKeyRef:
-          name: helloworld-secrets
-          key: password
-    - name: MYSQL_DATABASE
-      valueFrom: 
-        secretKeyRef:
-          name: helloworld-secrets
-          key: database
-    
-  
+      - name: MYSQL_ROOT_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: helloworld-secrets
+            key: rootPassword
+      - name: MYSQL_USER
+        valueFrom:
+          secretKeyRef:
+            name: helloworld-secrets
+            key: username
+      - name: MYSQL_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: helloworld-secrets
+            key: password
+      - name: MYSQL_DATABASE
+        valueFrom:
+          secretKeyRef:
+            name: helloworld-secrets
+            key: database
