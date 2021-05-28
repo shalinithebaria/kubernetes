@@ -1,0 +1,12 @@
+apiVerion: v1
+king: Service
+metadata:
+  name: helloworld-db-service
+spec:
+  ports:
+  - port: 31001
+    targetPort: nodejs-port
+    protocol: TCP
+  selector:
+    app: helloworld
+  type: NodePort
